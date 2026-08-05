@@ -9,9 +9,18 @@ const techs = [
   "CSS",
   "Tailwind CSS",
   "HeroUI",
+  "shadcn/ui",
+  "REST APIs",
+  "Auth.js",
   "Git",
   "GitHub",
   "VS Code",
+  "Figma",
+  "MongoDB",
+  "SQLite",
+  "Linux",
+  "Python",
+  "C++",
 ];
 
 export default function TechMarquee() {

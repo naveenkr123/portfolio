@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, Database, Hammer, Sparkles } from "lucide-react";
+import { Code2, Braces, Hammer, Sparkles } from "lucide-react";
 
 import { Reveal, SectionHeading } from "./Reveal";
 
@@ -9,38 +9,33 @@ const groups = [
     title: "Frontend",
     icon: Code2,
     skills: [
-      "HTML",
-      "CSS",
+      "HTML 5",
+      "CSS 3",
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
       "Tailwind CSS",
+      "Bootstrap/React Bootstrap",
       "HeroUI",
-      "Framer Motion",
-    ],
-  },
-  {
-    title: "Backend / APIs",
-    icon: Database,
-    skills: [
-      "Node.js",
-      "Express",
-      "REST APIs",
-      "Next.js API Routes",
-      "Authentication",
-      "JWT",
+      "Shadcn/ui",
+      "REST API Integration (Axios)",
     ],
   },
   {
     title: "Tools",
     icon: Hammer,
-    skills: ["Git", "GitHub", "VS Code", "Postman", "Figma", "npm"],
+    skills: ["Git", "GitHub", "Figma", "draw.io", "MongoDB", "SQLite", "Linux"],
+  },
+  {
+    title: "Programming Languages",
+    icon: Braces,
+    skills: ["C", "C++", "Python"],
   },
   {
     title: "Currently Learning",
     icon: Sparkles,
-    skills: ["Docker", "Prisma", "System Design", "AWS"],
+    skills: ["System Design", "Auth.js", "DSA"],
   },
 ];
 
