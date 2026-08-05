@@ -11,9 +11,8 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-import MagneticButton from "./MagneticButton";
 import { Reveal, SectionHeading } from "./Reveal";
-import { Tooltip } from "@heroui/react";
+import { Button, Tooltip } from "@heroui/react";
 
 const socials = [
   {
@@ -214,11 +213,15 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <MagneticButton type="submit" variant="primary">
+              <Button
+                type="submit"
+                color="primary"
+                isLoading={sending}
+                endContent={!sending && <Send className="h-4 w-4" />}
+                className="font-medium rounded-lg"
+              >
                 {sending ? "Sending..." : "Send Message"}
-
-                <Send className="h-4 w-4" />
-              </MagneticButton>
+              </Button>
             </div>
           </form>
         </Reveal>

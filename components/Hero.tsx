@@ -3,7 +3,8 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 
-import MagneticButton from "@/components/MagneticButton";
+import { Button } from "@heroui/react";
+import Link from "next/link";
 
 const snippets = [
   { code: "const dev = 'Naveen'", top: "18%", left: "6%", delay: 0 },
@@ -100,12 +101,32 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.32 }}
             className="mt-9 flex flex-wrap gap-3"
           >
-            <MagneticButton href="#projects" variant="primary">
-              <Download className="h-4 w-4" /> Resume
-            </MagneticButton>
-            <MagneticButton href="#contact" variant="ghost">
-              <Mail className="h-4 w-4" /> Contact Me
-            </MagneticButton>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button
+                download
+                as={Link}
+                href="/resume.pdf"
+                color="primary"
+                size="lg"
+                radius="lg"
+                startContent={<Download className="h-4 w-4" />}
+                className="font-medium rounded-xl"
+              >
+                Resume
+              </Button>
+
+              <Button
+                as="a"
+                href="#contact"
+                variant="bordered"
+                size="lg"
+                radius="lg"
+                startContent={<Mail className="h-4 w-4" />}
+                className="border-border rounded-xl bg-secondary/40 text-foreground hover:border-primary/50"
+              >
+                Contact Me
+              </Button>
+            </div>
           </motion.div>
         </div>
 
