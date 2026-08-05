@@ -135,7 +135,7 @@ export default function Hero() {
     </section>
   );
 }
-
+// test comment
 function HeroVisual() {
   const reduce = useReducedMotion();
   return (
