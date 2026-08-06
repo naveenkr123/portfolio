@@ -93,7 +93,7 @@ export default function About() {
           </span>
 
           <div className="min-w-0 flex-1">
-            <h3 className="font-display text-lg font-semibold wrap-break-word">
+            <h3 className="font-display text-sm xl:text-lg font-semibold wrap-break-word">
               Bachelor of Computer Applications (BCA)
             </h3>
 
@@ -101,7 +101,7 @@ export default function About() {
               2020 - 2023
             </p>
 
-            <p className="mt-1 wrap-break-word text-sm text-muted-foreground">
+            <p className="mt-1 wrap-break-word text-xs xl:text-sm text-muted-foreground">
               G.L. Bajaj Institute of Technology &amp; Management
             </p>
           </div>
