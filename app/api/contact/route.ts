@@ -30,7 +30,7 @@ export async function POST(request: Request) {
   <div style="max-width:720px;margin:auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;">
 
     <div style="padding:48px;">
-      <h1 style="margin:0;font-size:42px;font-weight:700;color:#111827;">
+      <h1 style="margin:0;font-size:32px;font-weight:700;color:#111827;">
         Portfolio Contact
       </h1>
 
@@ -82,8 +82,8 @@ export async function POST(request: Request) {
         Message
       </h3>
 
-      <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:16px;">
-        <p style="margin:0;font-size:17px;line-height:1.8;color:#374151;white-space:pre-wrap;">
+      <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:8px;">
+        <p style="margin:0;font-size:12px;line-height:1.8;color:#374151;white-space:pre-wrap;">
           ${message}
         </p>
       </div>
