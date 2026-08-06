@@ -34,10 +34,10 @@ export default function WhyMe() {
         title="Built on four principles"
       />
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-16 grid gap-4 xl:gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {reasons.map((reason, index) => (
           <Reveal key={reason.title} delay={index * 0.08}>
-            <div className="glass group relative h-full overflow-hidden rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:glow-ring">
+            <div className="glass group relative h-full overflow-hidden rounded-2xl p-4 xl:p-7 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:glow-ring">
               <span
                 aria-hidden
                 className="absolute -left-10 -top-10 h-28 w-28 rounded-full bg-violet/25 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"

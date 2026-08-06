@@ -51,13 +51,13 @@ export default function Skills() {
         description="Technologies and tools I use to build modern, performant, and scalable web applications."
       />
 
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
+      <div className="mt-16 grid gap-4 xl:gap-6 md:grid-cols-2">
         {groups.map((group, index) => {
           const Icon = group.icon;
 
           return (
             <Reveal key={group.title} delay={index * 0.08}>
-              <div className="glass group h-full rounded-3xl p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:glow-ring">
+              <div className="glass group h-full rounded-3xl p-4 xl:p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:glow-ring">
                 <div className="flex items-center gap-4">
                   <div className="rounded-lg bg-primary/10 p-3 text-primary transition-colors duration-300 group-hover:bg-primary/20">
                     <Icon size={22} />
@@ -78,7 +78,7 @@ export default function Skills() {
                         border-border
                         px-4
                         py-2
-                        text-sm
+                        text-xs xl:text-sm
                         text-muted-foreground
                         transition-all
                         duration-300

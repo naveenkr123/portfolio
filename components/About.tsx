@@ -70,14 +70,14 @@ export default function About() {
       />
 
       <Reveal className="mx-auto mt-4 max-w-3xl space-y-4 text-center text-muted-foreground">
-        <p className="leading-relaxed">
+        <p className="leading-relaxed text-sm xl:text-base">
           I am a Frontend Web Developer with {getExperienceYears()} years of
           professional experience building responsive, accessible, and
           high-performance web applications using React, Next.js, TypeScript,
           and modern UI libraries.
         </p>
 
-        <p className="leading-relaxed">
+        <p className="leading-relaxed text-sm xl:text-base">
           I enjoy transforming ideas into intuitive, high-performance web
           experiences through clean architecture, reusable components, and
           smooth interactions. I'm always learning new technologies and refining
@@ -98,7 +98,7 @@ export default function About() {
             </h3>
 
             <p className="mt-1 font-mono text-xs tracking-widest text-primary">
-              2019–2022
+              2020 - 2023
             </p>
 
             <p className="mt-1 wrap-break-word text-sm text-muted-foreground">

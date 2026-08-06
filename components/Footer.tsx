@@ -15,17 +15,12 @@ const socials = [
   {
     icon: GitBranch,
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/naveenkr123",
   },
   {
     icon: BriefcaseBusiness,
     label: "LinkedIn",
-    href: "https://linkedin.com",
-  },
-  {
-    icon: Bird,
-    label: "Twitter",
-    href: "https://twitter.com",
+    href: "https://www.linkedin.com/in/naveenkr229",
   },
 ];
 

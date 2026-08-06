@@ -1,14 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import {
-  GitBranch,
-  BriefcaseBusiness,
-  Mail,
-  MapPin,
-  Send,
-  Bird,
-} from "lucide-react";
+import { GitBranch, BriefcaseBusiness, Mail, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
 
 import { Reveal, SectionHeading } from "./Reveal";
@@ -18,17 +11,12 @@ const socials = [
   {
     icon: GitBranch,
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/naveenkr123",
   },
   {
     icon: BriefcaseBusiness,
     label: "LinkedIn",
-    href: "https://linkedin.com",
-  },
-  {
-    icon: Bird,
-    label: "Twitter",
-    href: "https://twitter.com",
+    href: "https://www.linkedin.com/in/naveenkr229",
   },
 ];
 
@@ -94,7 +82,7 @@ export default function Contact() {
 
       <div className="mt-16 grid gap-8 lg:grid-cols-[0.85fr_1fr]">
         <Reveal className="space-y-6">
-          <div className="glass rounded-2xl p-7">
+          <div className="glass rounded-2xl p-6 xl:p-7">
             <h3 className="font-display text-lg font-semibold">
               Contact Information
             </h3>
@@ -166,7 +154,10 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <form onSubmit={handleSubmit} className="glass rounded-2xl p-7">
+          <form
+            onSubmit={handleSubmit}
+            className="glass rounded-2xl p-6 xl:p-7"
+          >
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label

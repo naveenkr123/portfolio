@@ -35,11 +35,11 @@ export default function TechMarquee() {
 
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-linear-to-l from-background to-transparent" />
 
-      <div className="marquee-track flex w-max items-center gap-4">
+      <div className="marquee-track flex w-max items-center gap-2 xl:gap-4">
         {row.map((tech, index) => (
           <span
             key={`${tech}-${index}`}
-            className="glass flex items-center gap-3 whitespace-nowrap rounded-xl px-6 py-3 font-display text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="glass flex items-center gap-3 whitespace-nowrap rounded-xl px-4 xl:px-6 py-2 xl:py-3 font-display text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             {tech}

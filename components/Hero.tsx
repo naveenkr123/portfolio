@@ -80,7 +80,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.16 }}
-            className="mt-4 font-display text-xl font-medium text-foreground/90 sm:text-2xl"
+            className="mt-2 xl:mt-4 font-display text-lg font-medium text-foreground/90 xl:text-2xl"
           >
             Frontend Web Developer
           </motion.p>
@@ -89,7 +89,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.24 }}
-            className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground"
+            className="mt-5 max-w-xl text-sm xl:text-base leading-relaxed text-muted-foreground"
           >
             I build modern, responsive, and user-focused web applications with
             React, Next.js, and TypeScript.
