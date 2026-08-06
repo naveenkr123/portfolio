@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       replyTo: email,
       subject: `📩 ${subject}`,
       html: `
-<div style="background:#f5f7fb;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+<div style="background:#f5f7fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <div style="max-width:720px;margin:auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;">
 
     <div style="padding:48px;">
