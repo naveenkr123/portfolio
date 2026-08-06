@@ -38,20 +38,47 @@ const fieldClass =
 export default function Contact() {
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const form = e.currentTarget;
 
-    setSending(true);
+    const formData = new FormData(form);
 
-    setTimeout(() => {
-      setSending(false);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
 
-      toast.success("Message sent — I'll get back to you soon!");
+    try {
+      setSending(true);
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send message.");
+      }
+
+      toast.success("Message sent successfully!");
 
       form.reset();
-    }, 700);
+    } catch (error) {
+      console.error(error);
+
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
