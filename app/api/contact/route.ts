@@ -26,11 +26,11 @@ export async function POST(request: Request) {
       replyTo: email,
       subject: `📩 ${subject}`,
       html: `
-<div style="background:#f5f7fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <div style="max-width:720px;margin:auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;">
 
-    <div style="padding:48px;">
-      <h1 style="margin:0;font-size:32px;font-weight:700;color:#111827;">
+    <div style="padding:28px;">
+      <h1 style="margin:0;font-size:22px;font-weight:700;color:#111827;">
         Portfolio Contact
       </h1>
 
@@ -43,21 +43,21 @@ export async function POST(request: Request) {
 
     <table style="width:100%;border-collapse:collapse;">
       <tr>
-        <td style="padding:12px 48px;font-size:12px;font-weight:600;color:#111827;width:170px;">
+        <td style="padding:12px 28px;font-size:12px;font-weight:600;color:#111827;width:170px;">
           Name
         </td>
 
-        <td style="padding:12px 48px;font-size:12px;color:#111827;">
+        <td style="padding:12px 28px;font-size:12px;color:#111827;">
           ${name}
         </td>
       </tr>
 
       <tr style="border-top:1px solid #e5e7eb;">
-        <td style="padding:12px 48px;font-size:12px;font-weight:600;color:#111827;">
+        <td style="padding:12px 28px;font-size:12px;font-weight:600;color:#111827;">
           Email
         </td>
 
-        <td style="padding:12px 48px;font-size:12px;">
+        <td style="padding:12px 28px;font-size:12px;">
           <a href="mailto:${email}" style="color:#2563eb;text-decoration:none;">
             ${email}
           </a>
@@ -65,11 +65,11 @@ export async function POST(request: Request) {
       </tr>
 
       <tr style="border-top:1px solid #e5e7eb;">
-        <td style="padding:12px 48px;font-size:12px;font-weight:600;color:#111827;">
+        <td style="padding:12px 28px;font-size:12px;font-weight:600;color:#111827;">
           Subject
         </td>
 
-        <td style="padding:12px 48px;font-size:12px;color:#111827;">
+        <td style="padding:12px 28px;font-size:12px;color:#111827;">
           ${subject}
         </td>
       </tr>
@@ -77,13 +77,13 @@ export async function POST(request: Request) {
 
     <hr style="margin:0;border:none;border-top:1px solid #e5e7eb;">
 
-    <div style="padding:12px 48px;">
-      <h3 style="margin:0 0 20px;font-size:12px;font-weight:600;color:#111827;">
+    <div style="padding:12px 28px;">
+      <h3 style="margin:0 0 14px;font-size:12px;font-weight:600;color:#111827;">
         Message
       </h3>
 
       <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:8px;">
-        <p style="margin:0;font-size:12px;line-height:1.8;color:#374151;white-space:pre-wrap;">
+        <p style="margin:0;font-size:12px;color:#374151;white-space:pre-wrap;">
           ${message}
         </p>
       </div>
@@ -91,14 +91,14 @@ export async function POST(request: Request) {
 
     <hr style="margin:0;border:none;border-top:1px solid #e5e7eb;">
 
-    <div style="padding:28px 48px;">
-      <p style="margin:0;font-size:15px;color:#6b7280;">
+    <div style="padding:18px 28px;">
+      <p style="margin:0;font-size:12px;color:#6b7280;">
         This email was sent from your portfolio contact form.
       </p>
     </div>
 
     <div style="border-top:1px solid #e5e7eb;background:#fafafa;padding:28px;text-align:center;">
-      <p style="margin:0;font-size:15px;color:#6b7280;">
+      <p style="margin:0;font-size:12px;color:#6b7280;">
         © ${new Date().getFullYear()}
         <a href="https://naveenkr123.vercel.app" style="color:#2563eb;text-decoration:none;">
           Naveen Kumar Portfolio
@@ -106,7 +106,7 @@ export async function POST(request: Request) {
         All rights reserved.
       </p>
 
-      <p style="margin:10px 0 0;font-size:14px;color:#9ca3af;">
+      <p style="margin:8px 0 0;font-size:12px;color:#9ca3af;">
         Please do not reply to this email.
       </p>
     </div>
